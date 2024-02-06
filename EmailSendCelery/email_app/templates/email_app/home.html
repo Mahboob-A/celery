@@ -1,0 +1,14 @@
+{% extends "email_app/core.html" %}
+
+
+{% block title %} Home {% endblock %}
+{% block headtitle %} Celery Home Page {% endblock %}
+
+{% block content %}
+
+    <h3>Home Page</h3>
+    <h4>To Send Email To All Users, Press The Button Below. It Uses Celery To Send Email To All The Users In The Background </h4>
+    <a href="{% url 'send_email_all_users' %}">TASK: Send Email To All Users</a>
+
+
+{% endblock %}
