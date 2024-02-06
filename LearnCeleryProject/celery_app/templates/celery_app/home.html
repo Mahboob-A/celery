@@ -1,0 +1,18 @@
+{% extends "celery_app/core.html" %}
+
+
+{% block title %} Home {% endblock %}
+{% block headtitle %} Celery Home Page {% endblock %}
+
+{% block content %}
+
+    <h3>Task</h3>
+    {% if result.id %}
+    <p>Task ID: {{ result.id }}</p>
+    <a href="{% url 'task_result' result.id %}">See Task Result</a>
+    {% else %}
+        <h4>No Task Information</h4>
+    {% endif %}
+
+
+{% endblock %}
