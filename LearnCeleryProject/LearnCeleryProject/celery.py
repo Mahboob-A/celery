@@ -38,7 +38,7 @@ app.conf.beat_schedule = {
     'print_current_time_by_interval-1' : {
         'task' : 'celery_app.tasks.print_current_time_by_interval', 
         'schedule' : 10, # in secconds 
-        'args' : ('Mahboob Alam',)
+        'args' : ('Mahboob Alam',) 
     }
 }
 
